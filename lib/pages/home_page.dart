@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
             color: Colors.grey[200],
             child: ListView(
               children: [
-                 Center(
+                Container(
                   child: Column(
                   children: [
                   TarjetaTexto(),

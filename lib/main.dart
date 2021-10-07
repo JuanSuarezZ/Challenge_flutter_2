@@ -1,8 +1,9 @@
 import 'package:challenge2/pages/home_page.dart';
 import 'package:flutter/material.dart';
- 
+
+//para correr el proyecto desde la web se usa el comando flutter run -d web-server
 void main() => runApp(MyApp());
- 
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,13 +12,17 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       initialRoute: 'home',
       routes: {
-        'home' : ( _ ) => Home(),
-      }, 
+        'home': (_) => Home(),
+      },
       theme: ThemeData(
-      
         textTheme: TextTheme(
-          headline3: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
-          headline5: TextStyle(fontSize: 26, color: Colors.black,fontWeight: FontWeight.bold, ),
+          headline3: TextStyle(
+              fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+          headline5: TextStyle(
+            fontSize: 26,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
           headline6: TextStyle(fontSize: 15, color: Colors.black45),
         ),
       ),
